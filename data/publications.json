@@ -1,0 +1,246 @@
+[
+  {
+    "year": 2026,
+    "entries": [
+      {
+        "id": "pub-2026-nature-electronics",
+        "authors": "Huang, Y., Chen, L., Lai, J., Cao, B., Wang, Y., Xu, Z., Ye, Y., Cai, T., Li, Z., Bi, L., Chacon, B., Jia, W., Gogotsi, Y., Li, D.* & Jiang, Y.*",
+        "title": "Abrasion-resistant bioelectronics based on a three-dimensional topological architecture and covalent chemical anchoring",
+        "journal": "Nature Electronics",
+        "details": "doi:10.1038/s41928-026-01625-0 (2026)",
+        "url": "https://www.nature.com/articles/s41928-026-01625-0"
+      },
+      {
+        "id": "pub-2026-nature-reviews",
+        "authors": "Ye, Y. & Jiang, Y.*",
+        "title": "Engineering long-term stability in soft bioelectronics for clinical translation",
+        "journal": "Nature Reviews Bioengineering",
+        "details": "4, 293–295 (2026)",
+        "url": "https://www.nature.com/articles/s44222-026-00414-w"
+      },
+      {
+        "id": "pub-2026-biomaterials-science",
+        "authors": "Wang, Y., Gao, Y., Tang, L., Guo, Y., Sha, B. & Jiang, Y.*",
+        "title": "Hydrogel-based wearable and implantable biosensors in health monitoring",
+        "journal": "Biomaterials Science",
+        "details": "doi:10.1039/D5BM01789K (2026)",
+        "url": "https://pubs.rsc.org/en/content/articlehtml/2026/bm/d5bm01789k"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "entries": [
+      {
+        "id": "pub-2025-advanced-science",
+        "authors": "Chen, L., Liu, Y., Huang, Y., Li, Z., Zhang, C., Tang, J., Ling, X., Cao, B., Li, B., Zhang, Y., Zhou, W., Xu, Q., Ma, S., Guan, X., Xiao, D., Geng, J., Zhao, Y., Li, G., Wang, Y.-X., Jia, W., Jiang, Y.,* Zhang, M.* & Li, D.*",
+        "title": "Soft Bioelectronic Interfaces for Continuous Peripheral Neural Signal Recording and Robust Cross‐Subject Decoding",
+        "journal": "Advanced Science",
+        "details": "12, e14732 (2025)",
+        "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202414732"
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "entries": [
+      {
+        "id": "pub-2024-ccs-chemistry",
+        "authors": "Huang, Y.,# Tang, L.# & Jiang, Y.*",
+        "title": "Chemical strategies of tailoring PEDOT:PSS for bioelectronic applications: synthesis, processing and device fabrication",
+        "journal": "CCS Chemistry",
+        "details": "6, 1844–1867 (2024)",
+        "url": "https://www.chinesechemsoc.org/doi/10.31635/ccschem.024.202403858"
+      },
+      {
+        "id": "pub-2024-biosensors",
+        "authors": "Cao, B., Huang, Y., Chen, L., Jia, W., Li, D. & Jiang, Y.*",
+        "title": "Soft bioelectronics for diagnostic and therapeutic applications in neurological diseases",
+        "journal": "Biosensors and Bioelectronics",
+        "details": "259, 116378 (2024)",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S095656632400383X"
+      },
+      {
+        "id": "pub-2024-medx",
+        "authors": "Xu, Z., Hao, Y., Luo, A. & Jiang, Y.*",
+        "title": "Technologies and applications in wireless biosensors for real-time health monitoring",
+        "journal": "Med-X",
+        "details": "2, 24 (2024)",
+        "url": "https://link.springer.com/article/10.1007/s44258-024-00041-3"
+      },
+      {
+        "id": "pub-2024-nature",
+        "authors": "Zhong, D.,# Wu, C.,# Jiang, Y.,# Yuan, J., Kim, M.-g., Nishio, Y., Shih, C.-C., Wang, W., Lai, J.-C., Ji, X., Gao, T. Z., Wang, Y.-X., Xu, C., Zheng, Y., Yu, Z., Gong, H., Matsuhisa, N., Zhao, C., Lei, Y., Liu, D., Zhang, S., Ochiai, Y., Liu, S., Wei, S., Tok, J. B.-H. & Bao, Z.",
+        "title": "High-speed and large-scale intrinsically stretchable integrated circuits",
+        "journal": "Nature",
+        "details": "627, 313–320 (2024)",
+        "url": "https://www.nature.com/articles/s41586-024-07096-7"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "entries": [
+      {
+        "id": "pub-2023-nature-biotech",
+        "authors": "Jiang, Y.,# Trotsyuk, A. A.,# Niu, S.,# Henn, D., Chen, K., Shih, C.-C., Larson, M. R., Mermin-Bunnell, A. M., Mittal, S., Lai, J.-C., Beard, E., Saberi, A., Jing, S., Zhong, D., Steele, S. R., Sun, K., Jain, T., Zhao, E., Viana, W. G., Tang, J., Sivaraj, D., Padmanabhan, J., Rodrigues, M., Perrault, D. P., Leeolou, M. C., Bonham, C. A., Kwon, S. H., Kussie, H. C., Gurusankar, G., Januszyk, M., Gurtner, G. C. & Bao Z.",
+        "title": "Wireless, closed-loop, smart bandage with integrated sensors and stimulators for advanced wound care and accelerated healing",
+        "journal": "Nature Biotechnology",
+        "details": "41, 652–662 (2023)",
+        "url": "https://www.nature.com/articles/s41587-022-01528-3"
+      },
+      {
+        "id": "pub-2023-science",
+        "authors": "Wang, W.,# Jiang, Y.,# Zhong, D., Zhang, Z., Choudhury, S., Lai, J.-C., Gong, H., Niu, S., Yan, X., Zheng, Y., Shih, C.-C., Ning, R., Lin, Q., Li, D., Kim, Y.-H., Kim, J., Wang, Y.-X., Zhao, C., Xu, C., Ji, X., Nishio, Y., Lyu, H., Tok, J. B.-H. & Bao, Z.",
+        "title": "Neuromorphic sensorimotor loop embodied by monolithically integrated, low-voltage, soft e-skin",
+        "journal": "Science",
+        "details": "380, 735–742 (2023)",
+        "url": "https://www.science.org/doi/10.1126/science.ade0086"
+      },
+      {
+        "id": "pub-2023-nature-biomed",
+        "authors": "Zhou, W.,# Jiang, Y.,# Xu, Q., Chen, L., Qiao, H., Wang, Y.-X., Lai, J.-C., Zhong, D., Zhang, Y., Li, W., Du, Y., Wang, X., Lei, J., Dong, G., Guan, X., Ma, S., Kang, P., Yuan, L., Zhang, M., Tok, J. B.-H., Li, D., Bao, Z. & Jia, W.",
+        "title": "Soft and stretchable organic bioelectronics for continuous intraoperative neurophysiological monitoring during microsurgery",
+        "journal": "Nature Biomedical Engineering",
+        "details": "doi:10.1038/s41551-023-01069-3 (2023)",
+        "url": "https://www.nature.com/articles/s41551-023-01069-3"
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "entries": [
+      {
+        "id": "pub-2022-science",
+        "authors": "Jiang, Y.,# Zhang, Z.,# Wang, Y.-X.,# Li, D.,# Coen, C.-T., Hwaun, E., Chen, G., Wu, H.-C., Zhong, D., Niu, S., Wang, W., Saberi, A., Lai, J.-C., Wu, Y., Wang, Y., Trotsyuk, A. A., Loh, K. Y., Shih, C.-C., Xu, W., Liang, K., Zhang, K., Bai, Y., Gurusankar, G., Hu, W., Jia, W., Cheng, Z., Dauskardt, R. H., Gurtner, G. C., Tok, J. B.-H., Deisseroth, K., Soltesz, I. & Bao, Z.",
+        "title": "Topological supramolecular network enabled high-conductivity, stretchable organic bioelectronics",
+        "journal": "Science",
+        "details": "375, 1411–1417 (2022)",
+        "url": "https://www.science.org/doi/10.1126/science.abj7564"
+      },
+      {
+        "id": "pub-2022-nature",
+        "authors": "Zhang, Z.,# Wang, W.,# Jiang, Y.,# Wang, Y.-X.,# Wu, Y., Lai, J.-C., Niu, S., Xu, C., Shih, C.-C., Wang, C., Yan, H., Galuska, L., Prine, N., Wu, H.-C., Zhong, D., Chen, G., Matsuhisa, N., Zheng, Y., Yu, Z., Wang, Y., Dauskardt, R. H., Gu, X., Tok, J. B.-H. & Bao, Z.",
+        "title": "High-brightness all-polymer stretchable LED with charge-trapping dilution",
+        "journal": "Nature",
+        "details": "603, 624–630 (2022)",
+        "url": "https://www.nature.com/articles/s41586-022-04400-1"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "entries": [
+      {
+        "id": "pub-2021-afm",
+        "authors": "Zhang, Q.,# Jiang, Y.,# Chen, L., Chen, W., Li, J., Cai, Y., Ma, C., Xu, W., Lu, Y., Jia, X. & Bao Z.",
+        "title": "Ultra-Compliant and Tough Thermochromic Polymer for Self-Regulated Smart Windows",
+        "journal": "Advanced Functional Materials",
+        "details": "31, 2100686 (2021)",
+        "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202100686"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "entries": [
+      {
+        "id": "pub-2020-science-advances",
+        "authors": "Gao, X.,# Jiang, Y.,# Lin, Y.,# Kim, K.-H.,# Fang, Y., Yi, J. S., Meng, L. Y., Lee, H.-C., Lu, Z., Leddy, O., Zhang, R., Tu, Q., Feng, W., Nair, V., Griffin, P. J., Shi, F. Y., Shekhawat, G. S., Dinner, A. R., Park, H.-G., & Tian, B.",
+        "title": "Structured silicon for revealing transient and integrated signal transductions in microbial systems",
+        "journal": "Science Advances",
+        "details": "6, eaay2760 (2020)",
+        "url": "https://www.science.org/doi/10.1126/sciadv.aay2760"
+      },
+      {
+        "id": "pub-2020-matter",
+        "authors": "Fang, Y.,# Han, E.,# Zhang, X.-X.,# Jiang, Y.,# Lin, Y., Shi, J., Wu, J., Meng, L., Gao, X., Griffin, P. J., Xiao, X., Tsai, H.-M., Zhou, H., Zuo, X., Zhang, Q., Chu, M., Zhang, Q., Gao, Y., Roth, L. K., Bleher, R., Ma, Z., Jiang, Z., Yue, J., Kao, C.-M., Chen, C.-T., Tokmakoff, A., Wang, J., Jaeger, H. M. & Tian, B.",
+        "title": "Dynamic and Programmable Cellular-Scale Granules Enable Tissue-like Materials",
+        "journal": "Matter",
+        "details": "2, 948–964 (2020)",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2590238520300084"
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "entries": [
+      {
+        "id": "pub-2019-nature-protocols",
+        "authors": "Jiang, Y.,# Parameswaran, R.,# Li, X.,# Carvalho-de-Souza, J. L.,# Gao, X., Meng, L., Bezanilla, F., Shepherd, G. M. G. & Tian, B.",
+        "title": "Nongenetic optical neuromodulation with silicon-based materials",
+        "journal": "Nature Protocols",
+        "details": "14, 1339–1376 (2019)",
+        "url": "https://www.nature.com/articles/s41596-019-0135-9"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "entries": [
+      {
+        "id": "pub-2018-nature-biomed-eng",
+        "authors": "Jiang, Y.,# Li, X.,# Liu, B.,# Yi, J., Fang, Y., Shi, F., Gao, X., Sudzilovsky, E., Parameswaran, R., Koehler, K., Nair, V., Yue, J., Guo, K., Fang, Y., Tsai, H.-M., Freyermuth, G., Wong, R. C. S., Kao, C.-M., Chen, C.-T., Nicholls, A. W., Wu, X., Shepherd, G. M. G., & Tian, B.",
+        "title": "Rational design of silicon structures for optically controlled multiscale biointerfaces",
+        "journal": "Nature Biomedical Engineering",
+        "details": "2, 508–521 (2018)",
+        "url": "https://www.nature.com/articles/s41551-018-0230-1"
+      },
+      {
+        "id": "pub-2018-nature-reviews",
+        "authors": "Jiang, Y. & Tian, B.",
+        "title": "Inorganic semiconductor biointerfaces",
+        "journal": "Nature Reviews Materials",
+        "details": "3, 473–490 (2018)",
+        "url": "https://www.nature.com/articles/s41578-018-0062-3"
+      },
+      {
+        "id": "pub-2018-nano-letters",
+        "authors": "Fang, Y.,# Jiang, Y.,# Ledesma, H. A.,* Yi, J., Gao, X., Weiss, D. E., Shi, F., & Tian, B. Z.",
+        "title": "Texturing Silicon Nanowires for Highly Localized Optical Modulation of Cellular Dynamics",
+        "journal": "Nano Letters",
+        "details": "18, 4487–4492 (2018)",
+        "url": "https://pubs.acs.org/doi/10.1021/acs.nanolett.8b01626"
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "entries": [
+      {
+        "id": "pub-2017-nature-comms",
+        "authors": "Fang, Y.,# Jiang, Y.,# Cherukara, M. J.* Shi, F., Koehler, K., Freyermuth, G., Isheim, D., Narayanan, B., Nicholls, A. W., Seidman, D. N., Sankaranarayanan, S. K. R. S., & Tian, B.",
+        "title": "Alloy-assisted deposition of three-dimensional arrays of atomic gold catalyst for crystal growth studies",
+        "journal": "Nature Communications",
+        "details": "8, 2014 (2017)",
+        "url": "https://www.nature.com/articles/s41467-017-02025-x"
+      }
+    ]
+  },
+  {
+    "year": 2016,
+    "entries": [
+      {
+        "id": "pub-2016-nature-materials",
+        "authors": "Jiang, Y.,# Carvalho-de-Souza, J. L.,* Wong, R. C. S.,* Luo, Z., Isheim, D., Zuo, X., Nicholls, A. W., Jung, I. W., Yue, J., Liu, D.-J., Wang, Y., De Andrade, V., Xiao, X., Navrazhnykh, L., Weiss, D. E., Wu, X., Seidman, D. N., Bezanilla, F. & Tian, B.",
+        "title": "Heterogeneous silicon-based mesostructures for phospholipid-supported transient bioelectric systems",
+        "journal": "Nature Materials",
+        "details": "15, 1023–1030 (2016)",
+        "url": "https://www.nature.com/articles/nmat4673"
+      }
+    ]
+  },
+  {
+    "year": 2015,
+    "entries": [
+      {
+        "id": "pub-2015-science",
+        "authors": "Luo, Z.,# Jiang, Y.,# Myers, B. D., Isheim, D., Wu, J., Zimmerman, J. F., Wang, Z., Li, Q., Wang, Y., Chen, X., Seidman, D. N. & Tian, B.",
+        "title": "Atomic gold-enabled three-dimensional lithography for silicon mesostructures",
+        "journal": "Science",
+        "details": "348, 1451–1455 (2015)",
+        "url": "https://www.science.org/doi/10.1126/science.1257278"
+      }
+    ]
+  }
+]

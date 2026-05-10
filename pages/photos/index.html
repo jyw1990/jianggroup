@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos · Jiang Group · Penn Engineering</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-logo" href="../../index.html">
+        <img src="../../assets/images/logo.png" alt="Jiang Group · Penn Engineering">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="../../index.html">Home</a></li>
+        <li class="nav-item">
+          <a href="../people/index.html">People</a>
+          <ul class="nav-dropdown">
+            <li><a href="../alumni/index.html">Alumni</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="../research/index.html">Research</a></li>
+        <li class="nav-item"><a href="../publications/index.html">Publications</a></li>
+        <li class="nav-item"><a href="index.html" class="active">Photos</a></li>
+        <li class="nav-item"><a href="../contact/index.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <div id="photosContent">
+      <p style="color:var(--muted)">Loading…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer"></footer>
+
+  <script src="../../assets/js/main.js"></script>
+  <script>
+  (async () => {
+    const photos = await fetchData('photos.json');
+    const root = rootPath('');
+
+    // Sort newest first
+    const sorted = [...photos].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    let html = '';
+    sorted.forEach(entry => {
+      const imagesHtml = entry.images && entry.images.length
+        ? entry.images.map(src =>
+            `<img src="${root}${src}" alt="${entry.caption}" loading="lazy" onerror="this.outerHTML='<div class=\\'photo-placeholder\\'>Photo coming soon</div>'">`
+          ).join('')
+        : `<div class="photo-placeholder">Photo coming soon</div>`;
+
+      html += `
+        <div class="photo-entry">
+          <h2>${entry.display_date}</h2>
+          <div class="photo-caption">${entry.caption}</div>
+          <div class="photo-images">${imagesHtml}</div>
+        </div>
+      `;
+    });
+
+    document.getElementById('photosContent').innerHTML = html || '<p>No photos yet.</p>';
+  })();
+  </script>
+</body>
+</html>

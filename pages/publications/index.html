@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications · Jiang Group · Penn Engineering</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-logo" href="../../index.html">
+        <img src="../../assets/images/logo.png" alt="Jiang Group · Penn Engineering">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="../../index.html">Home</a></li>
+        <li class="nav-item">
+          <a href="../people/index.html">People</a>
+          <ul class="nav-dropdown">
+            <li><a href="../alumni/index.html">Alumni</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="../research/index.html">Research</a></li>
+        <li class="nav-item"><a href="index.html" class="active">Publications</a></li>
+        <li class="nav-item"><a href="../photos/index.html">Photos</a></li>
+        <li class="nav-item"><a href="../contact/index.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <p class="pub-scholar-link">
+      For the most up-to-date publications, please check
+      <a href="https://scholar.google.com/citations?user=BJXpPqAAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.
+    </p>
+    <div id="pubContent">
+      <p style="color:var(--muted)">Loading…</p>
+    </div>
+    <p class="pub-note">
+      #: These authors contributed equally to this work.<br>
+      *: Corresponding authors
+    </p>
+  </main>
+
+  <footer class="site-footer"></footer>
+
+  <script src="../../assets/js/main.js"></script>
+  <script>
+  (async () => {
+    const pubs = await fetchData('publications.json');
+
+    let html = '';
+    pubs.forEach(section => {
+      html += `<div class="pub-year-section"><h2>${section.year}</h2><ul class="pub-list">`;
+      section.entries.forEach(e => {
+        html += `
+          <li>
+            ${e.authors}
+            <span class="pub-title">${e.title},</span>
+            <span class="pub-journal">${e.journal}</span>,
+            ${e.details}.
+            ${e.url ? `(<a href="${e.url}" target="_blank" rel="noopener">Link</a>)` : ''}
+          </li>
+        `;
+      });
+      html += `</ul></div>`;
+    });
+
+    document.getElementById('pubContent').innerHTML = html;
+  })();
+  </script>
+</body>
+</html>

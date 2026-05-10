@@ -1,0 +1,136 @@
+{
+  "masters_students": [
+    {
+      "id": "yikai-zou",
+      "name": "YIKAI ZOU",
+      "department": "Materials Science and Engineering",
+      "years": "2024–2025",
+      "exit_year": 2025,
+      "photo": "assets/images/alumni/yikai-zou.jpg"
+    },
+    {
+      "id": "zitong-xu",
+      "name": "ZITONG XU",
+      "department": "Bioengineering",
+      "years": "2023–2025",
+      "exit_year": 2025,
+      "photo": "assets/images/alumni/zitong-xu.jpg"
+    },
+    {
+      "id": "mark-xia",
+      "name": "MARK XIA",
+      "department": "Electrical and System Engineering",
+      "years": "2023–2025",
+      "exit_year": 2025,
+      "photo": "assets/images/alumni/mark-xia.jpg"
+    },
+    {
+      "id": "yuetong-hao",
+      "name": "YUETONG HAO",
+      "department": "Bioengineering",
+      "years": "2023–2025",
+      "exit_year": 2025,
+      "photo": "assets/images/alumni/yuetong-hao.jpg"
+    },
+    {
+      "id": "griffin-dorman",
+      "name": "GRIFFIN DORMAN",
+      "department": "Bioengineering",
+      "years": "2023–2024",
+      "exit_year": 2024,
+      "photo": "assets/images/alumni/griffin-dorman.jpg"
+    },
+    {
+      "id": "surreys-zheng",
+      "name": "SURREYS ZHENG",
+      "department": "Bioengineering",
+      "years": "2023–2024",
+      "exit_year": 2024,
+      "photo": "assets/images/alumni/surreys-zheng.jpg"
+    },
+    {
+      "id": "jiale-han",
+      "name": "JIALE HAN",
+      "department": "Materials Science and Engineering",
+      "years": "2023–2024",
+      "exit_year": 2024,
+      "photo": "assets/images/alumni/jiale-han.jpg"
+    },
+    {
+      "id": "runjin-zhu",
+      "name": "RUNJIN ZHU",
+      "department": "Bioengineering",
+      "years": "2023–2024",
+      "exit_year": 2024,
+      "photo": "assets/images/alumni/runjin-zhu.jpg"
+    },
+    {
+      "id": "yaxin-fan",
+      "name": "YAXIN FAN",
+      "department": "Chemical Science",
+      "years": "2023–2024",
+      "exit_year": 2024,
+      "photo": "assets/images/alumni/yaxin-fan.jpg"
+    }
+  ],
+  "undergrad_students": [
+    {
+      "id": "amy-luo",
+      "name": "AMY LUO",
+      "department": "Bioengineering",
+      "years": "2024",
+      "exit_year": 2024,
+      "photo": "assets/images/alumni/amy-luo.jpg"
+    },
+    {
+      "id": "brock-horton",
+      "name": "BROCK HORTON",
+      "department": "Summer Intern, University of Alabama at Birmingham",
+      "years": "2023",
+      "exit_year": 2023,
+      "photo": "assets/images/alumni/brock-horton.jpg"
+    }
+  ],
+  "highschool_students": [
+    {
+      "id": "dylan-borell",
+      "name": "DYLAN BORELL",
+      "school": "Paul D. Schreiber High School",
+      "years": "Summer 2025",
+      "exit_year": 2025,
+      "photo": "assets/images/alumni/dylan-borell.jpg"
+    },
+    {
+      "id": "terrance-xia",
+      "name": "TERRANCE XIA",
+      "school": "Lower Merion High School",
+      "years": "Summer 2025",
+      "exit_year": 2025,
+      "photo": "assets/images/alumni/terrance-xia.jpg"
+    },
+    {
+      "id": "annika-bhadra",
+      "name": "ANNIKA BHADRA",
+      "school": "Mount Saint Joseph Academy",
+      "years": "Summer 2025",
+      "exit_year": 2025,
+      "photo": "assets/images/alumni/annika-bhadra.jpg"
+    },
+    {
+      "id": "julian-kimball",
+      "name": "JULIAN KIMBALL",
+      "school": "Paul D. Schreiber High School",
+      "years": "Summer 2024",
+      "exit_year": 2024,
+      "photo": "assets/images/alumni/julian-kimball.jpg"
+    },
+    {
+      "id": "rena-kaplan",
+      "name": "RENA KAPLAN",
+      "school": "The Baldwin School",
+      "years": "Summer 2023",
+      "exit_year": 2023,
+      "photo": "assets/images/alumni/rena-kaplan.jpg"
+    }
+  ]
+}

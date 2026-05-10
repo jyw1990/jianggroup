@@ -1,0 +1,47 @@
+[
+  {
+    "id": "photo-2025-12",
+    "date": "2025-12-01",
+    "display_date": "Dec, 2025",
+    "caption": "Group dinner, happy 2026!",
+    "images": ["assets/images/photos/2025-12-dinner.jpg"]
+  },
+  {
+    "id": "photo-2025-08",
+    "date": "2025-08-01",
+    "display_date": "Aug, 2025",
+    "caption": "Summer BBQ party",
+    "images": ["assets/images/photos/2025-08-bbq.jpg"]
+  },
+  {
+    "id": "photo-2024-12",
+    "date": "2024-12-01",
+    "display_date": "Dec, 2024",
+    "caption": "Group dinner, happy 2025!",
+    "images": ["assets/images/photos/2024-12-dinner.jpg"]
+  },
+  {
+    "id": "photo-2024-09",
+    "date": "2024-09-01",
+    "display_date": "Sept, 2024",
+    "caption": "Summer BBQ party!",
+    "images": ["assets/images/photos/2024-09-bbq.jpg"]
+  },
+  {
+    "id": "photo-2024-02",
+    "date": "2024-02-01",
+    "display_date": "Feb, 2024",
+    "caption": "We were excited to participate in the 2024 Philly Materials Day to provide demonstrations of soft and stretchable materials for the young minds!",
+    "images": [
+      "assets/images/photos/2024-02-philly-materials-1.jpg",
+      "assets/images/photos/2024-02-philly-materials-2.jpg"
+    ]
+  },
+  {
+    "id": "photo-2023-12",
+    "date": "2023-12-01",
+    "display_date": "Dec, 2023",
+    "caption": "Group dinner, happy holidays!",
+    "images": ["assets/images/photos/2023-12-dinner.jpg"]
+  }
+]

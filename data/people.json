@@ -1,0 +1,95 @@
+{
+  "pi": {
+    "name": "YUANWEN JIANG",
+    "title": "Assistant Professor",
+    "email": "ywjiang@seas.upenn.edu",
+    "photo": "assets/images/people/yuanwen-jiang.jpg",
+    "bio": "Dr. Yuanwen Jiang joined the University of Pennsylvania as an Assistant Professor of Materials Science and Engineering in 2023. His research has been focused on the design of bioelectronic materials and devices for medical applications. Dr. Jiang received his B.S. in Chemistry from Nanjing University in 2012 and his Ph.D. in Chemistry from the University of Chicago in 2018. Dr. Jiang conducted his postdoctoral research at Stanford University in the Department of Chemical Engineering. His previous works have received several scientific recognitions, including the ACS Young Investigator Symposium Award, IUPAC-SOLVAY International Award for Young Chemists, and Baxter Young Investigator Award."
+  },
+  "postdocs": [
+    {
+      "id": "yuhang-ye",
+      "name": "YUHANG YE",
+      "email": "yuhangye@seas.upenn.edu",
+      "photo": "assets/images/people/yuhang-ye.jpg",
+      "bio": "Dr. Yuhang Ye earned his Ph.D. degree from the University of British Columbia in 2023. Prior to this, he completed his master's degree at Aalto University and obtained his bachelor's degree from Qingdao University of Science and Technology. His previous research primarily centered on the development of functional hydrogels derived from bio-based polymers for emerging applications. Yuhang has garnered several recognitions, including the Chinese Government Award for Outstanding Students Abroad in 2023, the President's Excellence Award in 2022, and the Fourth-Year Doctoral Fellowship in 2019."
+    }
+  ],
+  "phd_students": [
+    {
+      "id": "yewei-huang",
+      "name": "YEWEI HUANG",
+      "email": "yeweih@seas.upenn.edu",
+      "photo": "assets/images/people/yewei-huang.jpg",
+      "bio": "Yewei Huang received her Bachelor's degree in Polymer Science and Engineering from Fudan University in 2020 and her Master's degree in Materials Science and Engineering from Penn in 2022. She is a Ph.D. student in the MSE program since Fall 2022. Yewei received the National Scholarship of China (2019), Outstanding Graduate of Shanghai (2020). At Penn, Yewei received Outstanding Research Award (2022) and Outstanding Teaching Award (2024)."
+    },
+    {
+      "id": "yuhui-wang",
+      "name": "YUHUI WANG",
+      "email": "yhwang99@seas.upenn.edu",
+      "photo": "assets/images/people/yuhui-wang.jpg",
+      "bio": "Yuhui Wang received both his Bachelor's and Master's degrees in Polymer Science and Engineering from Zhejiang University in China. He joined the Jiang group as a Ph.D. student of MSE in Fall 2023. In his prior research, Yuhui focused on the design and synthesis of recyclable polymers. At Penn, Yuhui seeks to merge his unique background in polymer chemistry with the field of bioelectronics to produce innovative research."
+    },
+    {
+      "id": "baoning-sha",
+      "name": "BAONING SHA",
+      "email": "baoning@seas.upenn.edu",
+      "photo": "assets/images/people/baoning-sha.jpg",
+      "bio": "Baoning Sha received his Bachelor's degree in Materials Science and Engineering from Shandong University, China. He spent two years at the Shenzhen Institute of Advanced Technology (SIAT), Chinese Academy of Sciences, before pursuing a Master's degree in Biomedical Engineering at Columbia University. In his previous research, Baoning focused on doping-induced in vivo assembly of nanosheets and their regulation of the peripheral-central immune axis. At Penn, Baoning aims to develop remotely controlled biointerfaces for the future."
+    },
+    {
+      "id": "tianyu-cai",
+      "name": "TIANYU CAI",
+      "email": "tycai@seas.upenn.edu",
+      "photo": "assets/images/people/tianyu-cai.jpg",
+      "bio": "Tianyu Cai received his Bachelor's degree in Electronic Science and Technology from Xi'an Jiaotong-Liverpool University in 2021 and his Master's degree in Bioengineering from Penn in 2024. He is a Ph.D. student in the Bioengineering program since Fall 2024. Tianyu received the Outstanding Research Award of the University of Pennsylvania (2024). His research primarily focused on wireless devices for health."
+    }
+  ],
+  "masters_students": [
+    {
+      "id": "lingfeng-tang",
+      "name": "LINGFENG TANG",
+      "department": "Materials Science and Engineering",
+      "email": "nicktang@seas.upenn.edu",
+      "photo": "assets/images/people/lingfeng-tang.jpg"
+    },
+    {
+      "id": "likey-fung",
+      "name": "LIKEY FUNG",
+      "department": "Bioengineering",
+      "email": "likeyfun@seas.upenn.edu",
+      "photo": "assets/images/people/likey-fung.jpg"
+    },
+    {
+      "id": "yutong-wang",
+      "name": "YUTONG WANG",
+      "department": "Materials Science and Engineering",
+      "email": "yutongwa@seas.upenn.edu",
+      "photo": "assets/images/people/yutong-wang.jpg"
+    }
+  ],
+  "undergrad_students": [
+    {
+      "id": "justin-wang",
+      "name": "JUSTIN WANG",
+      "department": "Materials Science and Engineering",
+      "email": "jwangz@seas.upenn.edu",
+      "photo": "assets/images/people/justin-wang.jpg"
+    },
+    {
+      "id": "ian-peng",
+      "name": "IAN PENG",
+      "department": "Bioengineering",
+      "email": "ipeng@seas.upenn.edu",
+      "photo": "assets/images/people/ian-peng.jpg"
+    },
+    {
+      "id": "kevin-wang",
+      "name": "KEVIN WANG",
+      "department": "Electrical and System Engineering",
+      "email": "wazhi@seas.upenn.edu",
+      "photo": "assets/images/people/kevin-wang.jpg"
+    }
+  ],
+  "highschool_students": []
+}

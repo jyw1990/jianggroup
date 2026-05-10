@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alumni · Jiang Group · Penn Engineering</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-logo" href="../../index.html">
+        <img src="../../assets/images/logo.png" alt="Jiang Group · Penn Engineering">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="../../index.html">Home</a></li>
+        <li class="nav-item">
+          <a href="../people/index.html">People</a>
+          <ul class="nav-dropdown">
+            <li><a href="index.html" class="active">Alumni</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="../research/index.html">Research</a></li>
+        <li class="nav-item"><a href="../publications/index.html">Publications</a></li>
+        <li class="nav-item"><a href="../photos/index.html">Photos</a></li>
+        <li class="nav-item"><a href="../contact/index.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <div id="alumniContent">
+      <p style="color:var(--muted)">Loading…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer"></footer>
+
+  <script src="../../assets/js/main.js"></script>
+  <script>
+  (async () => {
+    const data = await fetchData('alumni.json');
+    const root = rootPath('');
+
+    function photoOrPlaceholder(src, alt) {
+      return src
+        ? `<img src="${root}${src}" alt="${alt}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'placeholder-person\\'>👤</div>'">`
+        : `<div class="placeholder-person">👤</div>`;
+    }
+
+    // Sort each category by exit_year descending
+    function sortDesc(arr) {
+      return [...arr].sort((a, b) => b.exit_year - a.exit_year);
+    }
+
+    let html = '';
+
+    // ── Master's ──
+    if (data.masters_students?.length) {
+      html += `<h2 class="section-title">MASTER'S STUDENTS</h2><div class="people-grid alumni-section">`;
+      sortDesc(data.masters_students).forEach(p => {
+        html += `
+          <div class="person-card">
+            ${photoOrPlaceholder(p.photo, p.name)}
+            <h3>${p.name}</h3>
+            <div class="person-dept">${p.department}</div>
+            <div class="person-dept" style="color:var(--muted)">(${p.years})</div>
+          </div>
+        `;
+      });
+      html += `</div><hr style="border:none;border-top:1px solid var(--border);margin:2rem 0;">`;
+    }
+
+    // ── Undergrad ──
+    if (data.undergrad_students?.length) {
+      html += `<h2 class="section-title">UNDERGRADUATE STUDENTS</h2><div class="people-grid alumni-section">`;
+      sortDesc(data.undergrad_students).forEach(p => {
+        html += `
+          <div class="person-card">
+            ${photoOrPlaceholder(p.photo, p.name)}
+            <h3>${p.name}</h3>
+            <div class="person-dept">${p.department}</div>
+            <div class="person-dept" style="color:var(--muted)">(${p.years})</div>
+          </div>
+        `;
+      });
+      html += `</div><hr style="border:none;border-top:1px solid var(--border);margin:2rem 0;">`;
+    }
+
+    // ── High School ──
+    if (data.highschool_students?.length) {
+      html += `<h2 class="section-title">HIGH SCHOOL STUDENTS</h2><div class="people-grid alumni-section">`;
+      sortDesc(data.highschool_students).forEach(p => {
+        html += `
+          <div class="person-card">
+            ${photoOrPlaceholder(p.photo, p.name)}
+            <h3>${p.name}</h3>
+            <div class="person-dept">${p.school}</div>
+            <div class="person-dept" style="color:var(--muted)">(${p.years})</div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+    }
+
+    document.getElementById('alumniContent').innerHTML = html || '<p>No alumni listed yet.</p>';
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "soft",
+    "title": "Soft Bioelectronic Interfaces",
+    "carousel_title": "Soft Bioelectronic Materials",
+    "carousel_subtitle": "Construction of tissue-like soft bioelectronic materials and devices through rational molecular design and engineering",
+    "image": "assets/images/research/soft-bioelectronic.jpg",
+    "carousel_image": "assets/images/research/carousel-soft.jpg",
+    "references": [
+      { "citation": "Science, 375, 1411–1417 (2022)", "url": "https://www.science.org/doi/10.1126/science.abj7564" },
+      { "citation": "Nature Biomedical Engineering 7, 1270–1281 (2023)", "url": "https://www.nature.com/articles/s41551-023-01069-3" },
+      { "citation": "Nature Electronics, 10.1038/s41928-026-01625-0 (2026)", "url": "https://www.nature.com/articles/s41928-026-01625-0" }
+    ]
+  },
+  {
+    "id": "flexible",
+    "title": "Flexible Devices for Healthcare",
+    "carousel_title": "Integrated Healthcare Devices",
+    "carousel_subtitle": "Hybrid bioelectronic systems through seamless integration of flexible circuits and conducting adhesive tissue interfaces",
+    "image": "assets/images/research/flexible-devices.jpg",
+    "carousel_image": "assets/images/research/carousel-flexible.jpg",
+    "references": [
+      { "citation": "Nature Biotechnology, 41, 652–662 (2023)", "url": "https://www.nature.com/articles/s41587-022-01528-3" },
+      { "citation": "Science 380, 735–742 (2023)", "url": "https://www.science.org/doi/10.1126/science.ade0086" }
+    ]
+  },
+  {
+    "id": "materials",
+    "title": "Materials for Remote Neuromodulation",
+    "carousel_title": "Remote Neuromodulation",
+    "carousel_subtitle": "High-precision control of biological activities through bottom-up synthesis of semiconducting structures",
+    "image": "assets/images/research/neuromodulation.jpg",
+    "carousel_image": "assets/images/research/carousel-neuro.jpg",
+    "references": [
+      { "citation": "Nature Biomedical Engineering 2, 508–521 (2018)", "url": "https://www.nature.com/articles/s41551-018-0230-1" },
+      { "citation": "Nature Materials 15, 1023–1030 (2016)", "url": "https://www.nature.com/articles/nmat4673" },
+      { "citation": "Science Advances 6, eaay2760 (2020)", "url": "https://www.science.org/doi/10.1126/sciadv.aay2760" }
+    ]
+  }
+]

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiang Group · Soft Bioelectronic Materials · Penn Engineering</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <img src="assets/images/logo.png" alt="Jiang Group · Penn Engineering">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item">
+          <a href="pages/people/index.html">People</a>
+          <ul class="nav-dropdown">
+            <li><a href="pages/alumni/index.html">Alumni</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="pages/research/index.html">Research</a></li>
+        <li class="nav-item"><a href="pages/publications/index.html">Publications</a></li>
+        <li class="nav-item"><a href="pages/photos/index.html">Photos</a></li>
+        <li class="nav-item"><a href="pages/contact/index.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Carousel ── -->
+  <section class="carousel" aria-label="Research highlights">
+    <div class="carousel-track" id="carouselTrack">
+      <!-- Slides injected by JS -->
+    </div>
+    <button class="carousel-btn carousel-prev" aria-label="Previous slide">
+      <svg viewBox="0 0 32 32"><path d="M11.433 15.992L22.69 5.712c.393-.39.393-1.03 0-1.42-.393-.39-1.03-.39-1.423 0l-11.98 10.94c-.21.21-.3.49-.285.76-.015.28.075.56.284.77l11.98 10.94c.393.39 1.03.39 1.424 0 .393-.4.393-1.03 0-1.42l-11.257-10.29"/></svg>
+    </button>
+    <button class="carousel-btn carousel-next" aria-label="Next slide">
+      <svg viewBox="0 0 32 32"><path d="M10.722 4.293c-.394-.39-1.032-.39-1.427 0-.393.39-.393 1.03 0 1.42l11.283 10.28-11.283 10.29c-.393.39-.393 1.02 0 1.42.395.39 1.033.39 1.427 0l12.007-10.94c.21-.21.3-.49.284-.77.014-.27-.076-.55-.286-.76L10.72 4.293z"/></svg>
+    </button>
+    <div class="carousel-dots" role="tablist" aria-label="Carousel navigation"></div>
+  </section>
+
+  <!-- ── Intro ── -->
+  <div class="home-intro">
+    <p>
+      <strong>The Jiang Group</strong> is an interdisciplinary team working in the field of <strong>bioelectronics</strong>, with people from materials science, molecular engineering, and biomedical engineering backgrounds. Through fundamental innovations in material design and device fabrication, we are passionate about transforming breakthroughs in physical sciences and engineering into novel tools to address unmet medical needs. Please contact Dr. Jiang if you are interested in developing bioelectronic materials and devices for precision health.
+    </p>
+    <p style="margin-top:0.75rem;">
+      Lab openings are available at all levels including Postdocs, Ph.D., Master's, Undergraduate, and High School students. We are committed to creating a diverse and inclusive environment for everyone in the group. Please send your CV to Dr. Jiang (<a href="mailto:ywjiang@seas.upenn.edu">ywjiang@seas.upenn.edu</a>).
+    </p>
+    <hr class="home-divider">
+  </div>
+
+  <!-- ── News ── -->
+  <section class="news-section">
+    <h2>NEWS</h2>
+    <div id="newsContainer">
+      <p style="color:var(--muted);font-size:0.9rem;">Loading news…</p>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer"></footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+  (async () => {
+    // ── Render Carousel ────────────────────────────────────
+    const research = await fetchData('research.json');
+    const track = document.getElementById('carouselTrack');
+    track.innerHTML = research.map(r => `
+      <div class="carousel-slide">
+        <div class="carousel-slide-text">
+          <h2>${r.carousel_title}</h2>
+          <p>${r.carousel_subtitle}</p>
+          <a href="${rootPath('pages/research/index.html')}#${r.id}" class="btn-readmore">Read More</a>
+        </div>
+        <div class="carousel-slide-image">
+          ${r.carousel_image
+            ? `<img src="${rootPath(r.carousel_image)}" alt="${r.carousel_title}" onerror="this.parentElement.innerHTML='<div class=\\'placeholder-img\\'>🔬</div>'">`
+            : `<div class="placeholder-img">🔬</div>`}
+        </div>
+      </div>
+    `).join('');
+    initCarousel();
+
+    // ── Render News ────────────────────────────────────────
+    const news = await fetchData('news.json');
+    const cutoff = new Date();
+    cutoff.setFullYear(cutoff.getFullYear() - 3);
+
+    // Filter active (not older than 3 years) and sort newest first
+    const active = news
+      .filter(n => new Date(n.date) >= cutoff)
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    // Group by month label
+    const byMonth = {};
+    active.forEach(n => {
+      if (!byMonth[n.month]) byMonth[n.month] = [];
+      byMonth[n.month].push(n);
+    });
+
+    const container = document.getElementById('newsContainer');
+    if (!Object.keys(byMonth).length) {
+      container.innerHTML = '<p style="color:var(--muted)">No recent news.</p>';
+      return;
+    }
+
+    container.innerHTML = Object.entries(byMonth).map(([month, items]) => `
+      <div class="news-month">
+        <div class="news-month-label">${month}</div>
+        <ul>
+          ${items.map(n => `
+            <li>
+              ${n.text}
+              ${n.image ? `<br><img src="${rootPath(n.image)}" alt="" loading="lazy">` : ''}
+            </li>
+          `).join('')}
+        </ul>
+      </div>
+    `).join('');
+  })();
+  </script>
+</body>
+</html>

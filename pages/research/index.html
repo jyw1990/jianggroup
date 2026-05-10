@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research · Jiang Group · Penn Engineering</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-logo" href="../../index.html">
+        <img src="../../assets/images/logo.png" alt="Jiang Group · Penn Engineering">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="../../index.html">Home</a></li>
+        <li class="nav-item">
+          <a href="../people/index.html">People</a>
+          <ul class="nav-dropdown">
+            <li><a href="../alumni/index.html">Alumni</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="index.html" class="active">Research</a></li>
+        <li class="nav-item"><a href="../publications/index.html">Publications</a></li>
+        <li class="nav-item"><a href="../photos/index.html">Photos</a></li>
+        <li class="nav-item"><a href="../contact/index.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <h1 class="section-title">OVERVIEW</h1>
+    <p class="research-overview">
+      Our research covers multiple disciplines including materials science, molecular engineering, and biomedical engineering. Through fundamental innovations in material design and device fabrication, we are passionate about transforming breakthroughs in physical sciences and engineering into novel bioelectronic tools to address unmet medical needs. Please contact Dr. Jiang if you are interested in developing bioelectronic materials and devices for precision health.
+    </p>
+    <p class="research-overview">Our research is supported by the following sponsors.</p>
+    <div class="research-sponsors" id="sponsorsRow">
+      <!-- sponsor logos could go here if assets are available -->
+    </div>
+
+    <div id="researchContent">
+      <p style="color:var(--muted)">Loading…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer"></footer>
+
+  <script src="../../assets/js/main.js"></script>
+  <script>
+  (async () => {
+    const research = await fetchData('research.json');
+    const root = rootPath('');
+
+    let html = '';
+    research.forEach(r => {
+      const imgHtml = r.image
+        ? `<img src="${root}${r.image}" alt="${r.title}" loading="lazy" onerror="this.outerHTML='<div class=\\'research-img-placeholder\\'>Image coming soon</div>'">`
+        : `<div class="research-img-placeholder">Image coming soon</div>`;
+
+      const refs = r.references.map(ref =>
+        `<li><em>${ref.citation}</em> (<a href="${ref.url}" target="_blank" rel="noopener">Link</a>)</li>`
+      ).join('');
+
+      html += `
+        <div class="research-item" id="${r.id}">
+          <h2>${r.title.toUpperCase()}</h2>
+          ${imgHtml}
+          <ul class="research-refs">${refs}</ul>
+        </div>
+      `;
+    });
+
+    document.getElementById('researchContent').innerHTML = html;
+
+    // Scroll to anchor after render
+    if (location.hash) {
+      setTimeout(() => {
+        const el = document.querySelector(location.hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  })();
+  </script>
+</body>
+</html>
